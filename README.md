@@ -1,1 +1,5 @@
-# LDM-Tarea-XPath-Guillermo
+He creado un archivo xbook para realizar 4 retos, primero creando un MARKDOWN para el título y la fecha y otros 4 markdown para poner los retos.
+
+En el primer reto introduje este código: /bibliotecaTecnica/recurso[categoria="CSS" and disponible="true"]/titulo/string(), en el cual /bibliotecaTecnica/recurso indica que debe localizar todos los elementos que se llamen recurso , luego [categoria="CSS" and disponible="true"] lo que hace es filtrar para que solo busque en los que tengan la categoría de CSS y ademas si valor boolean sea true (que esté disponible) y por ultimo /titulo/string(), hace que entre en la etiqueta titulo y devuelva un valor string que hay en las etiquetas de titulo.
+
+En el reto 2 he usado el código /bibliotecaTecnica/recurso[@formato != "PDF"]/@id, en el cual /bibliotecaTecnica/recurso indica que debe localizar todos los elementos que se llamen recurso, en [@formato != "PDF"] el @ significa atributo, entoces @formato significa que se queda solo con los atributos formato cuyo valor sea distinto a PDF, entoces una vez filtrado, uso /@id para que con "/" entre dentro de el atributo id y se extraiga.
